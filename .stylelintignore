@@ -1,6 +1,14 @@
-
+.husky
 node_modules
+.cz-config.js
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierrc
+.stylelintignore
+.stylelintrc.js
+commitlint.config.js
 package.json
 package-lock.json
+README.md
 yarn.lock
-.stylelintignore
