@@ -23,7 +23,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint-staged",
-      "commit-msg": "npx --no-install commitlint --edit \"$1\""
+      "commit-msg": "commitlint --edit \"$1\""
     }
   },
   "lint-staged": {
@@ -54,6 +54,7 @@
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "commitizen": "^4.2.4",
+    "commitlint": "^14.1.0",
     "cz-customizable": "^6.3.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^6.11.0",
