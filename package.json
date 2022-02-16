@@ -20,12 +20,6 @@
     "stylelint": "stylelint \"src/**/*.(scss|css)\" --fix",
     "commit": "git-cz"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged",
-      "commit-msg": "commitlint --edit \"$1\""
-    }
-  },
   "lint-staged": {
     "*": [
       "eslint src --ext .ts --ext .tsx --fix",
