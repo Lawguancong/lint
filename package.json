@@ -16,20 +16,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint src --ext .js --ext .ts --ext .tsx --fix",
+    "eslint": "eslint src --fix",
     "stylelint": "stylelint \"src/**/*.(scss|css)\" --fix",
+    "prepare": "husky install",
     "commit": "git-cz"
-  },
-  "prepare": "husky install",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged",
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
   },
   "lint-staged": {
     "*": [
-      "eslint src --ext .ts --ext .tsx --fix",
+      "eslint --ext .ts --ext .tsx --fix",
       "stylelint \"src/**/*.(scss|css)\" --fix",
       "git add ."
     ]
