@@ -32,3 +32,10 @@ yarn commit
 https://juejin.cn/post/7041768022284976165
 https://juejin.cn/post/6940127032932040735
 https://www.cnblogs.com/ly0612/p/15545803.html
+
+```js
+// 在 package.json 中添加脚本以在启用 Git 挂钩时自动设置可执行权限。
+package.json
+"prepare": "husky install && chmod ug+x .husky/*",
+https://stackoverflow.com/questions/68367259/husky-needs-to-make-executable-for-every-new-branch
+```
